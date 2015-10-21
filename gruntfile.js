@@ -7,6 +7,10 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     watch: {
+      scripts: {
+        files: ['bpg/src/**/*.html','bpg/src/**/*.js','bpg/src/**/*.css'],
+        tasks: ['distribution']
+      },
       options: {
         livereload: true
       },
@@ -58,6 +62,8 @@ module.exports = function (grunt) {
             'bower_components/angular-animate/angular-animate.js',
             'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
             'bower_components/bootstrap/js/dropdown.js',
+            'bower_components/bootstrap/dist/js/bootstrap.min.js',
+            'bower_components/bootstrap/dist/js/carousel.min.js',
             'bower_components/angular-translate/angular-translate.js',
             'bpg/src/js/app.js',
             'bpg/src/js/controllers.js',
@@ -76,7 +82,8 @@ module.exports = function (grunt) {
           'bpg/dist/css/movies.min.css': [
             'bpg/src/css/animations.css',
             'bower_components/bootstrap/dist/css/bootstrap.min.css',
-            'bpg/src/css/app.css'
+            'bpg/src/css/app.css',
+            'bpg/src/css/full-slider.css'
           ]
         }
       }
@@ -113,8 +120,9 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-processhtml');
 
-  grunt.registerTask('server', "Serve your app", [
-    'connect:server', 'watch']);
+  grunt.registerTask('server', "Serve your app", ['connect:server','watch']);
+
+  grunt.registerTask('developTest', "Develop Testing", ['watch']);
 
   grunt.registerTask('distribution', "Prepare files for production", [
     'cssmin', 'processhtml', 'htmlmin', 'uglify']);

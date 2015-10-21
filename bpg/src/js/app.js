@@ -12,8 +12,8 @@ movieApp.config(['$routeProvider','$translateProvider',
   function($routeProvider,$translateProvider) {
     $routeProvider.
       when('/home', {
-        templateUrl: 'templates/home.html',
-        controller: 'MovieListCtrl'
+        templateUrl: 'templates/home.html'
+        //controller: 'HomeCtrl'
       }).
       when('/movies/:movieId', {
         templateUrl: 'templates/movie-detail.html',
