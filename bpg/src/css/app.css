@@ -44,7 +44,7 @@
 }
 
 .navbar-default{
-    z-index: 10;
+    z-index: 100;
     border: none;
     color: #000000;
     border-radius: 0px;
@@ -62,12 +62,18 @@
     font-family: DinPro;
 }
 
+.navbar-default .navbar-nav > li > a:link, .navbar-default .navbar-nav > li > a:visited{
+    color: white;
+    border: none;
+}
+
 .navbar-default .navbar-nav > li > a:hover{
     color: #666666;
     background: white;
 }
 
 .affix-top{
+    /*
     background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.02) 99%, rgba(0,0,0,0) 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(70%,rgba(0,0,0,0.5)), color-stop(99%,rgba(0,0,0,0.02)), color-stop(100%,rgba(0,0,0,0)));
     background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.5) 70%,rgba(0,0,0,0.02) 99%,rgba(0,0,0,0) 100%);
@@ -75,7 +81,9 @@
     background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.5) 70%,rgba(0,0,0,0.02) 99%,rgba(0,0,0,0) 100%);
     background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.5) 70%,rgba(0,0,0,0.02) 99%,rgba(0,0,0,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 );
+    */
     transition: all 0.7s ease 0s;
+    background: transparent;
 }
 
 .affix{
@@ -92,6 +100,7 @@ header{
     position: fixed;
     top: 0px;
     width: 100%;
+    z-index: 100;
 }
 
 #banner-1{
@@ -156,6 +165,27 @@ hr{
     padding-top: 20px;
 }
 
+.carousel-inner{
+    z-index: 0;
+}
+
+#loading-page{
+    background-color: #00254E;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    padding-top: 20%;
+    z-index: 9999;
+}
+
+.loading-logo{
+    display: block;
+    margin: auto;
+}
+
 /********************************/
 
 @media (max-width: 768px) {
@@ -170,4 +200,12 @@ hr{
     .valores-row{
         padding: 0px;
     }
+
+    .affix-top{
+        background-color: #000000;
+    }
+}
+
+.header-padding{
+    margin-top: 100px;
 }

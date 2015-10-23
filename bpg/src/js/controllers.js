@@ -1,5 +1,13 @@
-var moviesControllers = angular.module('moviesControllers', []);
+var BPGAppControllers = angular.module('BPGAppControllers', []);
 
+BPGAppControllers.controller("HomeCtrl",
+  ['$scope', '$routeParams', '$log', 'Movies',
+    function ($scope, $routeParams, $log, Movies) {
+    }
+  ]
+);
+
+/*
 moviesControllers.controller('MovieListCtrl',
   ['$scope', '$filter', '$log', 'Movies',
     function ($scope, $filter, $log, Movies) {
@@ -66,3 +74,4 @@ moviesControllers.controller("MovieDetailCtrl",
     function ($scope, $routeParams, $log, Movies) {
       $scope.movie = Movies.get({movieId: $routeParams.movieId});
     }]);
+*/

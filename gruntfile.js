@@ -67,6 +67,7 @@ module.exports = function (grunt) {
             'bower_components/angular-translate/angular-translate.js',
             'bpg/src/js/app.js',
             'bpg/src/js/controllers.js',
+            'bpg/src/js/directives.js',
             'bpg/src/js/filters.js',
             'bpg/src/js/services.js']
         }
@@ -82,8 +83,7 @@ module.exports = function (grunt) {
           'bpg/dist/css/movies.min.css': [
             'bpg/src/css/animations.css',
             'bower_components/bootstrap/dist/css/bootstrap.min.css',
-            'bpg/src/css/app.css',
-            'bpg/src/css/full-slider.css'
+            'bpg/src/css/app.css'
           ]
         }
       }
@@ -96,9 +96,9 @@ module.exports = function (grunt) {
         },
         files: {                                   // Dictionary of files
           'bpg/dist/index.html': 'tmp/src/index.html',     // 'destination': 'source'
+          'bpg/dist/templates/footer.html': 'bpg/src/templates/footer.html',     // 'destination': 'source'
           'bpg/dist/templates/home.html': 'bpg/src/templates/home.html',     // 'destination': 'source'
-          'bpg/dist/templates/movie-list.html': 'bpg/src/templates/movie-list.html',     // 'destination': 'source'
-          'bpg/dist/templates/movie-detail.html': 'bpg/src/templates/movie-detail.html'     // 'destination': 'source'
+          'bpg/dist/templates/portafolio.html': 'bpg/src/templates/portafolio.html',     // 'destination': 'source'
         }
       }
     },

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="movieApp">
+<html lang="en" ng-app="BPGApp">
 <head>
 	<title>BPG</title>
 	<meta charset="utf-8">
@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/app.css">
 	<link rel="stylesheet" href="css/animations.css">
-	<link rel="stylesheet" href="css/full-slider.css">
 	<!-- /build -->
 	<!-- build:js js/movies.min.js -->
 	<script src="/bower_components/jquery/dist/jquery.js"></script>
@@ -24,6 +23,7 @@
 	<script src="/bower_components/angular-translate/angular-translate.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/controllers.js"></script>
+	<script src="js/directives.js"></script>
 	<script src="js/filters.js"></script>
 	<script src="js/services.js"></script>
 	<script src="js/animations.js"></script>
@@ -33,82 +33,47 @@
 </head>
 <body>
 
-<header>
-	<nav class="navbar navbar-default" data-spy="affix" data-offset-top="100" data-offset-bottom="200">
-		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand brand" href="#"></a>
-			</div>
-
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#">Portafolio de Servicios</a></li>
-					<li><a href="#">¿Por qué elegirnos?</a></li>
-					<li><a href="#">Calendario Cursos</a></li>
-					<li><a href="#">Clientes</a></li>
-					<li><a href="#">Contacto</a></li>
-					<li><a href="#">Equipo</a></li>
-					<li><a href="#">Exámenes Prática</a></li>
-					<li><a href="#">Librería</a></li>
-				</ul>
-			</div><!-- /.navbar-collapse -->
-		</div><!-- /.container-fluid -->
-	</nav>
-</header>
+<div id="loading-page">
+	<img class="loading-logo" src="assets/bpg_menu.png">
+	<img class="loading-logo" src="assets/ajax-loader.gif">
+</div>
 
 	<div class="view-container">
+
+		<header>
+			<nav class="navbar navbar-default" data-spy="affix" data-offset-top="100" data-offset-bottom="200">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand brand" href="#home"></a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#portafolio">Portafolio de Servicios</a></li>
+							<li><a href="#">¿Por qué elegirnos?</a></li>
+							<li><a href="#">Calendario Cursos</a></li>
+							<li><a href="#">Clientes</a></li>
+							<li><a href="#">Contacto</a></li>
+							<li><a href="#">Equipo</a></li>
+							<li><a href="#">Exámenes Prática</a></li>
+							<li><a href="#">Librería</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+		</header>
+
 		<div ng-view class="view-frame"></div>
 	</div>
 
-<footer>
-	<div class="container">
-		<hr>
-		<div class="row">
-			<div class="col-sm-6 pull-left">
-				<div class="media">
-					<div class="media-left pull-left">
-						<img class="media-object" src="assets/icon_llamada.png" alt="llamada">
-					</div>
-					<div class="media-body">
-						<p class="text-left text-llamanos">Llámanos <span class="valores-high">+52[55]&nbsp;5061&#8226;4946</span></p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-lg-offset-3 col-sm-6">
-				<div class="pull-right">
-					<p class="secondary-text">Siguenos por...</p>
-					<a href="#">
-						<img src="assets/icon_face.jpg" alt="facebook">
-					</a>
-					<a href="#">
-						<img src="assets/icon_twitter.jpg" alt="twitter">
-					</a>
-					<a href="#">
-						<img src="assets/icon_in.jpg" alt="linkedin">
-					</a>
-					<a href="#">
-						<img src="assets/icon_skype.jpg" alt="skype">
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid" style="background-color: #00254D">
-		<div class="container">
-			<p class="footer-contacto"><span class="text-left">Insurgentes Sur No. 800 Piso 8 Col. Del Valle México, D.F. C.P. 03100</span>
-			<span class="text-right pull-right">&#8226;Aviso Legal &#8226;Aviso de Privacidad</span></p>
-		</div>
-	</div>
-</footer>
 
 </body>
 </html>

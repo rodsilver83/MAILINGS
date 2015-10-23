@@ -1,18 +1,22 @@
-var movieApp = angular.module('movieApp', [
+var movieApp = angular.module('BPGApp', [
   'ngRoute',
-  'moviesControllers',
+  'BPGAppControllers',
+  'BPGAppDirectives',
   'moviesServices',
   'movieFilters',
   'ngAnimate',
-  'ui.bootstrap',
-  'pascalprecht.translate'
+  'ui.bootstrap'
 ]);
 
-movieApp.config(['$routeProvider','$translateProvider',
+movieApp.config(['$routeProvider',
   function($routeProvider,$translateProvider) {
     $routeProvider.
       when('/home', {
-        templateUrl: 'templates/home.html'
+        templateUrl: 'templates/home.html',
+        controller: 'HomeCtrl'
+      }).
+      when('/portafolio', {
+        templateUrl: 'templates/portafolio.html'
         //controller: 'HomeCtrl'
       }).
       when('/movies/:movieId', {
@@ -23,15 +27,4 @@ movieApp.config(['$routeProvider','$translateProvider',
         redirectTo: '/home'
       });
 
-    $translateProvider.translations('en', {
-      'TITLE': 'Hello',
-      'FOO': 'This is a paragraph'
-    });
-
-    $translateProvider.translations('de', {
-      'TITLE': 'Hallo',
-      'FOO': 'Dies ist ein Absatz'
-    });
-
-    $translateProvider.preferredLanguage('en');
   }]);
