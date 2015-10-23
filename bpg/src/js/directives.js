@@ -5,7 +5,7 @@ BPGAppDirectives.directive('footer', function() {
     restrict: 'E',
     templateUrl: 'templates/footer.html',
     link: function(scope, element, attrs) {
-        $( "#loading-page" ).fadeOut( 2000);
+        $( "#loading-page" ).fadeOut(1000);
     }
   };
 });

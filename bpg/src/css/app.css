@@ -60,6 +60,8 @@
     transition-delay: 0s;
     color: white;
     font-family: DinPro;
+    -webkit-transform: rotateX(0deg) translateY(0px); /* Safari */
+    transform: rotateX(0deg) translateY(0px);
 }
 
 .navbar-default .navbar-nav > li > a:link, .navbar-default .navbar-nav > li > a:visited{
@@ -67,9 +69,30 @@
     border: none;
 }
 
-.navbar-default .navbar-nav > li > a:hover{
-    color: #666666;
+.navbar-default .navbar-nav > li:hover > a{
+    -webkit-transform: rotateX(90deg) translateY(-30px); /* Safari */
+    transform: rotateX(90deg) translateY(-30px);
+}
+
+.navbar-default .navbar-nav > li > span{
+    padding: 5px 15px;
     background: white;
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    display: block;
+    color: #666666;
+    -webkit-transform: rotateX(-90deg); /* Safari */
+    transform: rotateX(-90deg);
+    font-family: DinPro;
+    margin-top: -20px;
+}
+
+.navbar-default .navbar-nav > li:hover > span{
+    -webkit-transform: rotateX(0deg) translateY(-10px); /* Safari */
+    transform: rotateX(0deg) translateY(-10px);
+    font-family: DinPro;
 }
 
 .affix-top{
