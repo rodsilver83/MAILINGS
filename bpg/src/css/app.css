@@ -157,12 +157,12 @@ header{
 
 .valores-high{
     font-size: 24px;
-    color: #00264B;
+    color: #00274D;
 }
 
 .valores-list{
     font-size: 16px;
-    color: #00264B;
+    color: #00274D;
 }
 
 .valores-row{
@@ -170,7 +170,7 @@ header{
 }
 
 hr{
-    border: solid 1px #00254D;
+    border: solid 1px #00274D;
 }
 
 .text-llamanos{
@@ -193,7 +193,7 @@ hr{
 }
 
 #loading-page{
-    background-color: #00254E;
+    background-color: #00274D;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -225,7 +225,7 @@ hr{
     }
 
     .affix-top{
-        background-color: #000000;
+        background-color: #00274D;
     }
 }
 

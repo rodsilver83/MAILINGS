@@ -54,7 +54,7 @@ module.exports = function (grunt) {
       },
       my_target: {
         files: {
-          'bpg/dist/js/movies.min.js': [
+          'bpg/dist/js/bpg.min.js': [
             'bower_components/jquery/dist/jquery.js',
             'bower_components/angular/angular.js',
             'bower_components/angular-route/angular-route.js',
@@ -80,7 +80,7 @@ module.exports = function (grunt) {
       },
       target: {
         files: {
-          'bpg/dist/css/movies.min.css': [
+          'bpg/dist/css/bpg.min.css': [
             'bpg/src/css/animations.css',
             'bower_components/bootstrap/dist/css/bootstrap.min.css',
             'bpg/src/css/app.css'
