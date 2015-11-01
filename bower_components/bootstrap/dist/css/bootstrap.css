@@ -1909,7 +1909,7 @@ th
 .table-striped > tbody > tr:nth-child(odd) > td,
 .table-striped > tbody > tr:nth-child(odd) > th
 {
-    background-color: #f9f9f9;
+    background-color: #ccd9e0;
 }
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th
@@ -2772,8 +2772,8 @@ fieldset[disabled] .btn-success.active
 .btn-info
 {
     color: #fff;
-    border-color: #46b8da;
-    background-color: #5bc0de;
+    border-color: #001a33;
+    background-color: #00274d;
 }
 .btn-info:hover,
 .btn-info:focus,
@@ -2782,8 +2782,8 @@ fieldset[disabled] .btn-success.active
 .open .dropdown-toggle.btn-info
 {
     color: #fff;
-    border-color: #269abc;
-    background-color: #39b3d7;
+    border-color: #000;
+    background-color: #001224;
 }
 .btn-info:active,
 .btn-info.active,
@@ -2807,12 +2807,12 @@ fieldset[disabled] .btn-info:active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active
 {
-    border-color: #46b8da;
-    background-color: #5bc0de;
+    border-color: #001a33;
+    background-color: #00274d;
 }
 .btn-info .badge
 {
-    color: #5bc0de;
+    color: #00274d;
     background-color: #fff;
 }
 .btn-warning
@@ -5580,12 +5580,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 }
 .label-info
 {
-    background-color: #5bc0de;
+    background-color: #00274d;
 }
 .label-info[href]:hover,
 .label-info[href]:focus
 {
-    background-color: #31b0d5;
+    background-color: #000d1a;
 }
 .label-warning
 {
@@ -5907,7 +5907,7 @@ a.thumbnail.active
 }
 .progress-bar-info
 {
-    background-color: #5bc0de;
+    background-color: #00274d;
 }
 .progress-striped .progress-bar-info
 {
