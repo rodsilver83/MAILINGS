@@ -232,6 +232,11 @@ hr{
     color: white;
     opacity: 0.7;
 }
+
+a.btn-block{
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
 /***************Tables*****************/
 
 .panel-body{
@@ -264,6 +269,11 @@ hr{
 
     .affix-top{
         background-color: #00274D;
+    }
+
+    .img-responsive.portafolio{
+        width: 50px;
+        max-width: 50px;
     }
 }
 
