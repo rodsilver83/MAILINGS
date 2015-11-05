@@ -1,8 +1,11 @@
 var BPGAppControllers = angular.module('BPGAppControllers', []);
 
-BPGAppControllers.controller("HomeCtrl",
-  ['$scope', '$routeParams', '$log', 'Movies',
-    function ($scope, $routeParams, $log, Movies) {
+BPGAppControllers.controller("BPGCtrl",
+  ['$scope', '$routeParams', '$log', '$location','$window', 'Movies',
+    function ($scope, $routeParams, $log, $location, $window, Movies) {
+      $scope.$on('$viewContentLoaded', function(event) {
+        $window.ga('send', 'pageview', { page: $location.url() });
+      });
     }
   ]
 );

@@ -13,18 +13,20 @@ movieApp.config(['$routeProvider',
     $routeProvider.
       when('/home', {
         templateUrl: 'templates/home.html',
-        controller: 'HomeCtrl'
+        controller: 'BPGCtrl'
       }).
       when('/portafolio', {
-        templateUrl: 'templates/portafolio.html'
-        //controller: 'HomeCtrl'
-      }).
-      when('/movies/:movieId', {
-        templateUrl: 'templates/movie-detail.html',
-        controller: 'MovieDetailCtrl'
+        templateUrl: 'templates/portafolio.html',
+        controller: 'BPGCtrl'
       }).
       otherwise({
         redirectTo: '/home'
       });
+      /*.
+      when('/movies/:movieId', {
+        templateUrl: 'templates/movie-detail.html',
+        controller: 'MovieDetailCtrl'
+      })
+      */
 
   }]);
