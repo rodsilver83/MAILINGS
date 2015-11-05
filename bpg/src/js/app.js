@@ -2,14 +2,12 @@ var movieApp = angular.module('BPGApp', [
   'ngRoute',
   'BPGAppControllers',
   'BPGAppDirectives',
-  'moviesServices',
-  'movieFilters',
   'ngAnimate',
   'ui.bootstrap'
 ]);
 
 movieApp.config(['$routeProvider',
-  function($routeProvider,$translateProvider) {
+  function($routeProvider) {
     $routeProvider.
       when('/home', {
         templateUrl: 'templates/home.html',
@@ -17,7 +15,7 @@ movieApp.config(['$routeProvider',
       }).
       when('/portafolio', {
         templateUrl: 'templates/portafolio.html',
-        controller: 'BPGCtrl'
+        controller: 'PortafolioCtrl'
       }).
       otherwise({
         redirectTo: '/home'

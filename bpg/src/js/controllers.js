@@ -1,11 +1,23 @@
 var BPGAppControllers = angular.module('BPGAppControllers', []);
 
 BPGAppControllers.controller("BPGCtrl",
-  ['$scope', '$routeParams', '$log', '$location','$window', 'Movies',
+  ['$scope', '$routeParams', '$log', '$location','$window',
+    function ($scope, $routeParams, $log, $location, $window) {
+      $scope.$on('$viewContentLoaded', function(event) {
+        $window.ga('send', 'pageview', { page: $location.url() });
+      });
+    }
+  ]
+);
+
+BPGAppControllers.controller("PortafolioCtrl",
+  ['$scope', '$routeParams', '$log', '$location','$window',
     function ($scope, $routeParams, $log, $location, $window, Movies) {
       $scope.$on('$viewContentLoaded', function(event) {
         $window.ga('send', 'pageview', { page: $location.url() });
       });
+
+
     }
   ]
 );
