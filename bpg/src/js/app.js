@@ -15,7 +15,11 @@ movieApp.config(['$routeProvider',
       }).
       when('/portafolio', {
         templateUrl: 'templates/portafolio.html',
-        controller: 'PortafolioCtrl'
+        controller: 'TrackCtrl'
+      }).
+      when('/por_que_elegirnos', {
+        templateUrl: 'templates/por_que_elegirnos.html',
+        controller: 'TrackCtrl'
       }).
       otherwise({
         redirectTo: '/home'

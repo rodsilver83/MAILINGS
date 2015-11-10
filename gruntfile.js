@@ -98,6 +98,8 @@ module.exports = function (grunt) {
           'bpg/dist/templates/footer.html': 'bpg/src/templates/footer.html',     // 'destination': 'source'
           'bpg/dist/templates/home.html': 'bpg/src/templates/home.html',     // 'destination': 'source'
           'bpg/dist/templates/portafolio.html': 'bpg/src/templates/portafolio.html',     // 'destination': 'source'
+          'bpg/dist/templates/por_que_elegirnos.html': 'bpg/src/templates/por_que_elegirnos.html',     // 'destination': 'source'
+          'bpg/dist/templates/calendario.html': 'bpg/src/templates/calendario.html',     // 'destination': 'source'
         }
       }
     },

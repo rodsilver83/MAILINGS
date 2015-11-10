@@ -10,7 +10,7 @@ BPGAppControllers.controller("BPGCtrl",
   ]
 );
 
-BPGAppControllers.controller("PortafolioCtrl",
+BPGAppControllers.controller("TrackCtrl",
   ['$scope', '$routeParams', '$log', '$location','$window',
     function ($scope, $routeParams, $log, $location, $window, Movies) {
       $scope.$on('$viewContentLoaded', function(event) {

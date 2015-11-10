@@ -26,7 +26,7 @@
 }
 
 .brand{
-    background: rgba(0, 0, 0, 0) url("../assets/bpg_menu.png") no-repeat scroll center 70% / 100% auto;
+    background: rgba(0, 0, 0, 0) url("../assets/home/bpg_menu.png") no-repeat scroll center 70% / 100% auto;
     bottom: 0;
     display: block;
     height: 70px;
@@ -131,14 +131,14 @@ header{
 }
 
 #banner-1{
-    background-image: url("../assets/banner-inicial.jpg");
+    background-image: url("../assets/home/banner-inicial.jpg");
     background-size: cover;
     height: auto;
     width: 100%;
 }
 
 #banner-1-inner{
-    background-image: url("../assets/bpg-intro.png");
+    background-image: url("../assets/home/bpg-intro.png");
     background-size: cover;
     height: auto;
     width: 100%;
@@ -146,6 +146,13 @@ header{
 
 #banner-2{
     background-image: url("../assets/portafolio/banner_portafolio.jpg");
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+#banner-elegirnos{
+    background-image: url("../assets/elegirnos/img_elegirnos.jpg");
     background-size: cover;
     height: auto;
     width: 100%;
@@ -237,6 +244,11 @@ a.btn-block{
     overflow:hidden;
     text-overflow:ellipsis;
 }
+
+ul.list{
+  padding-left: 15px;
+}
+
 /***************Tables*****************/
 
 .panel-body{
