@@ -158,6 +158,13 @@ header{
     width: 100%;
 }
 
+#banner-calendario{
+    background-image: url("../assets/calendario/banner_calendario.jpg");
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
 .no-padding{
     padding: 0 !important;
 }

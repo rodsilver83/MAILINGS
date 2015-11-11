@@ -15,13 +15,13 @@ module.exports = function (grunt) {
         livereload: true
       },
       html: {
-        files: '**/*.html'
+        files: 'bpg/src/**/*.html'
       },
       js: {
-        files: '**/*.js'
+        files: 'bpg/src/**/*.js'
       },
       css: {
-        files: '**/*.css'
+        files: 'bpg/src/**/*.css'
       }
     },
     connect: {
@@ -29,8 +29,8 @@ module.exports = function (grunt) {
         options: {
           livereload: true,
           open: {
-            target: 'http://localhost:8000/bpg/',
-            appName: 'Chrome',
+            target: 'http://localhost:8000/bpg/src/',
+            appName: 'Firefox',
           }
         }
       }
@@ -61,9 +61,13 @@ module.exports = function (grunt) {
             'bower_components/angular-animate/angular-animate.js',
             'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
             'bower_components/bootstrap/js/dropdown.js',
+            'bower_components/bootstrap/js/carousel.js',
+            'bower_components/bootstrap/js/affix.js',
             'bower_components/bootstrap/dist/js/bootstrap.min.js',
-            'bower_components/bootstrap/dist/js/carousel.min.js',
-            'bower_components/angular-translate/angular-translate.js',
+            'bower_components/moment/min/moment.min.js',
+            'bower_components/angular-ui-calendar/src/calendar.js',
+            'bower_components/fullcalendar/dist/fullcalendar.min.js',
+            'bower_components/fullcalendar/dist/gcal.js',
             'bpg/src/js/app.js',
             'bpg/src/js/controllers.js',
             'bpg/src/js/directives.js',
