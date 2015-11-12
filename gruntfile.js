@@ -8,8 +8,8 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
     watch: {
       scripts: {
-        files: ['bpg/src/**/*.html','bpg/src/**/*.js','bpg/src/**/*.css'],
-        tasks: ['distribution']
+        files: ['bpg/src/**/*.html','bpg/src/js/**','bpg/src/**/*.css']
+        //tasks: ['distribution']
       },
       options: {
         livereload: true
@@ -86,7 +86,9 @@ module.exports = function (grunt) {
           'bpg/dist/css/bpg.min.css': [
             'bpg/src/css/animations.css',
             'bower_components/bootstrap/dist/css/bootstrap.min.css',
-            'bpg/src/css/app.css'
+            'bower_components/fullcalendar/dist/fullcalendar.css',
+            'bpg/src/css/app.css',
+            'bpg/src/css/calendar.css'
           ]
         }
       }
@@ -104,6 +106,7 @@ module.exports = function (grunt) {
           'bpg/dist/templates/portafolio.html': 'bpg/src/templates/portafolio.html',     // 'destination': 'source'
           'bpg/dist/templates/por_que_elegirnos.html': 'bpg/src/templates/por_que_elegirnos.html',     // 'destination': 'source'
           'bpg/dist/templates/calendario.html': 'bpg/src/templates/calendario.html',     // 'destination': 'source'
+          'bpg/dist/templates/modalTemplates.html': 'bpg/src/templates/modalTemplates.html',     // 'destination': 'source'
         }
       }
     },

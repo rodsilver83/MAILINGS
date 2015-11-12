@@ -9,6 +9,10 @@
     font-weight: bold;
 }
 
+h2,h4{
+    color: #00274D;
+}
+
 .rating {
     margin: 0px 20px;
     top: 0px;
@@ -256,6 +260,10 @@ ul.list{
   padding-left: 15px;
 }
 
+
+.calendar-desc{
+    white-space: pre;
+}
 /***************Tables*****************/
 
 .panel-body{

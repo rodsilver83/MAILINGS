@@ -1,9 +1,9 @@
 var movieApp = angular.module('BPGApp', [
   'ngRoute',
+  'ui.bootstrap',
   'BPGAppControllers',
   'BPGAppDirectives',
   'ngAnimate',
-  'ui.bootstrap',
   'ui.calendar'
 ]);
 
