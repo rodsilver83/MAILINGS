@@ -1,0 +1,98 @@
+<div class="container-fluid no-padding">
+
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    </ol>
+    -->
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div id="banner-examen" class="full-width-banner">
+          <div id="banner-1-inner"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    -->
+  </div>
+
+  <div class="container">
+    <form class="contact-form">
+      <div class="row">
+        <div class="col-sm-12">
+            <div class="form-group">
+              <label for="full-name">Nombre Completo:</label>
+              <input type="text" class="form-control" id="full-name" placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="correo">Correo:</label>
+              <input type="email" class="form-control" id="correo" placeholder="">
+            </div>
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+              <label for="telefono">Telefono:</label>
+              <input type="tel" class="form-control" id="telefono" placeholder="">
+            </div>
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+              <label for="empresa">Empresa:</label>
+              <input type="text" class="form-control" id="empresa" placeholder="">
+            </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="puesto">Puesto:</label>
+            <input type="text" class="form-control" id="puesto" placeholder="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 col-sm-offset-9">
+          <div class="form-group">
+            <button class="btn btn-info btn-block">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script type="application/javascript">
+    function resizeBanner(height) {
+      $(".full-width-banner").each(function (i, val) {
+        $(val).css("height", height + "px");
+      });
+    }
+
+    resizeBanner(window.innerHeight);
+
+    $(window).resize(function () {
+      resizeBanner(window.innerHeight);
+    });
+
+    $('.carousel').carousel({
+      interval: 4000
+    })
+  </script>
+
+</div>
+
+<footer></footer>

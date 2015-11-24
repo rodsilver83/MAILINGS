@@ -13,6 +13,10 @@ h2,h4{
     color: #00274D;
 }
 
+h4.partner{
+    color: #80A1B6;
+}
+
 .rating {
     margin: 0px 20px;
     top: 0px;
@@ -169,6 +173,41 @@ header{
     width: 100%;
 }
 
+#banner-clientes{
+    background-image: url("../assets/clientes/banner_clientes.jpg");
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+#banner-contacto{
+    background-image: url("../assets/contacto/banner_contacto.jpg");
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+#banner-equipo{
+    background-image: url("../assets/equipo/banner_equipo.jpg");
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+#banner-examen{
+    background-image: url("../assets/examen/banner_examen.jpg");
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+#banner-libreria{
+    background-image: url("../assets/libreria/banner_libreria.jpg");
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
 .no-padding{
     padding: 0 !important;
 }
@@ -264,6 +303,18 @@ ul.list{
 .calendar-desc{
     white-space: pre;
 }
+
+
+.contact-form{
+    background-color: #CBD6DF;
+    padding: 30px 10%;
+    margin-top: 20px;
+}
+
+.contact-form .row{
+    margin: 0px;
+}
+
 /***************Tables*****************/
 
 .panel-body{

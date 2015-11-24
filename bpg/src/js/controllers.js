@@ -58,6 +58,18 @@ BPGAppControllers.controller("CalendarCtrl",
   ]
 );
 
+BPGAppControllers.controller("ContactCtrl",
+  ['$scope', '$routeParams', '$log', '$location', '$window',
+    function ($scope, $routeParams, $log, $location, $window, Movies) {
+      $scope.$on('$viewContentLoaded', function (event) {
+        $window.ga('send', 'pageview', {page: $location.url()});
+      });
+
+
+    }
+  ]
+);
+
 BPGAppControllers.controller("TrackCtrl",
   ['$scope', '$routeParams', '$log', '$location', '$window',
     function ($scope, $routeParams, $log, $location, $window, Movies) {

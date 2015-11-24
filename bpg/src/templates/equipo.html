@@ -1,0 +1,84 @@
+<div class="container-fluid no-padding">
+
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    </ol>
+    -->
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div id="banner-equipo" class="full-width-banner">
+          <div id="banner-1-inner"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="./assets/equipo/foto_Mauricio.jpg" alt="Mauricio Corona">
+        <h4 class="text-center">MAURICIO CORONA</h4>
+        <h4 class="partner text-center">SOCIO</h4>
+      </div>
+      <div class="col-sm-9">
+        <h4>&bull;FORMACIÓN ACADÉMICA:</h4>
+        <p>Licenciado en Informárica - ULSA Maestro en TI - ULSA Doctor en Administracón de Empresas<br>19 certificaciones diferentes en ITIL &bullet; ISO/IEC 20000 Consultor &bullet; ISO/IEC</p>
+        <h4>&bullet;ESPECIALIDAD:</h4>
+        <p>Gestión de Servicios de TI &bullet; Alineación TI al Negocio &bullet; Modelos de Negocio &bullet;
+        Gestión de Riesgos &bullet; Gestion de Seguridad de la Información &bullet; Auditor</p>
+        <h4>&bullet; EXPERIENCIA PROFESIONAL:</h4>
+        <p>El Dr. Mauricio Corona cuenta con mas de 16 años de experiencia en proyectos de consultoría desempeñando  dentro de su ámbito de profesión el rol de Consultor y de Project Manager en la implementación de estrategias en tecnología y prácticas lideres; ejecutando funciones de negociación, planeación, diseño, desarrollo, transferencia de conocimientos y entrega de importantes proyectos dentro del áreade TI para empresas de gobierno e iniciativa privada.</p>
+        <p>A grandes rasgos sus responsabilidades en enfocado en dirigir proyectos estratégicos en donde se emplean mejores prácticas a nivel mundial como lo son ITIL, ISO/IEC 20000, COBIT, eTOM por mencionar algunos; liderando, dirigiendo e implementando los proyectos, al igual que estableciendo los modelos de gobierno requeridos para la administración adecuada de los recursos, riesgos y calidad de la entrega buscando siempre la creación de valor para la organización.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="./assets/equipo/foto_Alfonso.jpg" alt="Alfonso Figueroa">
+        <h4 class="text-center">ALFONSO FIGUEROA</h4>
+        <h4 class="partner text-center">SOCIO</h4>
+      </div>
+      <div class="col-sm-9">
+        <h4>&bull;FORMACIÓN ACADÉMICA:</h4>
+        <p>Ingeniero en Cibernética y Sistemas Computacionales -ULSA MBA - University of Queensland, Australia<br>
+        Certificado ITIL Expert No. 00001092 &bullet; Certificado PMP No.1304451 &bullet; Certificado TOGAF 9 No. 72055 &bullet; Certificado CGEIT No. 1104795 &bullet; Certificado ISO/IEC 20000 Auditor Líder</p>
+        <h4>&bullet;ESPECIALIDAD:</h4>
+        <p>Gestión de Servicios de TI &bullet; Estrategia y Arquitectura de TI &bullet; Gobierno de TI &bullet;
+          Gestión de Proyectos y Programas</p>
+        <h4>&bullet; EXPERIENCIA PROFESIONAL:</h4>
+        <p>El Sr. Alfonso Figueroa Hernández tiene 13 años de experiencia en proyectos de consultoría desempeñando  dentro de su ámbito de profesión el rol de Consultor y de Project Manager en la implementación de estrategias en tecnología y prácticas lideres; ejecutando funciones de negociación, planeación, diseño, desarrollo, transferencia de conocimientos y entrega de importantes proyectos dentro del áreade TI para empresas de gobierno e iniciativa privada.</p>
+        <p>A grandes rasgos sus responsabilidades en enfocado en dirigir proyectos estratégicos en donde se emplean mejores prácticas a nivel mundial como lo son ITIL, ISO/IEC 20000, COBIT, eTOM por mencionar algunos; liderando, dirigiendo e implementando los proyectos, al igual que estableciendo los modelos de gobierno requeridos para la administración adecuada de los recursos, riesgos y calidad de la entrega buscando siempre la creación de valor para la organización.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="application/javascript">
+    function resizeBanner(height) {
+      $(".full-width-banner").each(function (i, val) {
+        $(val).css("height", height + "px");
+      });
+    }
+
+    resizeBanner(window.innerHeight);
+
+    $(window).resize(function () {
+      resizeBanner(window.innerHeight);
+    });
+
+    $('.carousel').carousel({
+      interval: 4000
+    })
+  </script>
+
+</div>
+
+<footer></footer>

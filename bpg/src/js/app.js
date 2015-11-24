@@ -23,6 +23,23 @@ movieApp.config(['$routeProvider',
       templateUrl: 'templates/calendario.html',
       controller: 'CalendarCtrl'
     }).
+    when('/clientes', {
+      templateUrl: 'templates/clientes.html'
+    }).
+    when('/contacto', {
+      templateUrl: 'templates/contacto.html',
+      controller: 'ContactCtrl'
+    }).
+    when('/examen', {
+      templateUrl: 'templates/examen.html',
+      controller: 'ContactCtrl'
+    }).
+    when('/equipo', {
+      templateUrl: 'templates/equipo.html'
+    }).
+    when('/libreria', {
+      templateUrl: 'templates/libreria.html'
+    }).
     otherwise({
       redirectTo: '/home'
     });
