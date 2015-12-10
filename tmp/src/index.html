@@ -35,15 +35,15 @@
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#portafolio" ga-track="portafolio"><p>Portafolio de Servicios</p><span>Portafolio de Servicios</span></a></li>
-							<li><a href="#por_que_elegirnos" ga-track="por_que_elegirnos"><p>¿Por qué elegirnos?</p><span>¿Por qué elegirnos?</span></a></li>
-							<li><a href="#calendario" ga-track="calendario"><p>Calendario Cursos</p><span>Calendario Cursos</span></a></li>
-							<li><a href="#clientes" ga-track="clientes"><p>Clientes</p><span>Clientes</span></a></li>
-							<li><a href="#contacto" ga-track="contacto"><p>Contacto</p><span>Contacto</span></a></li>
-							<li><a href="#equipo" ga-track="equipo"><p>Equipo</p><span>Equipo</span></a></li>
-							<li><a href="#examenes" ga-track="examenes"><p>Exámenes Prática</p><span>Exámenes Práctica</span></a></li>
-							<li><a href="#libreria" ga-track="libreria"><p>Librería</p><span>Librería</span></a></li>
+						<ul class="nav navbar-nav navbar-right" id="navbar">
+							<li data-toggle="collapse" data-target=".nav-collapse"><a href="#portafolio" ga-track="portafolio"><p>Portafolio de Servicios</p><span>Portafolio de Servicios</span></a></li>
+							<li data-toggle="collapse" data-target=".nav-collapse"><a href="#por_que_elegirnos" ga-track="por_que_elegirnos"><p>¿Por qué elegirnos?</p><span>¿Por qué elegirnos?</span></a></li>
+							<li data-toggle="collapse" data-target=".nav-collapse"><a href="#calendario" ga-track="calendario"><p>Calendario Cursos</p><span>Calendario Cursos</span></a></li>
+							<li data-toggle="collapse" data-target=".nav-collapse"><a href="#clientes" ga-track="clientes"><p>Clientes</p><span>Clientes</span></a></li>
+							<li data-toggle="collapse" data-target=".nav-collapse"><a href="#contacto" ga-track="contacto"><p>Contacto</p><span>Contacto</span></a></li>
+							<li data-toggle="collapse" data-target=".nav-collapse"><a href="#equipo" ga-track="equipo"><p>Equipo</p><span>Equipo</span></a></li>
+							<li data-toggle="collapse" data-target=".nav-collapse"><a href="#examen" ga-track="examenes"><p>Exámenes de Prática</p><span>Exámenes Práctica</span></a></li>
+							<li data-toggle="collapse" data-target=".nav-collapse"><a href="#libreria" ga-track="libreria"><p>Librería</p><span>Librería</span></a></li>
 						</ul>
 					</div><!-- /.navbar-collapse -->
 				</div><!-- /.container-fluid -->
@@ -61,6 +61,13 @@
 
 	ga('create', 'UA-69738207-1', 'auto');
 	ga('send', 'pageview');
+
+	$(document).ready(function () {
+		$("#navbar li a").click(function(event) {
+			// check if window is small enough so dropdown is created
+			$("#bs-example-navbar-collapse-1").removeClass("in").addClass("collapse");
+		});
+	});
 
 </script>
 

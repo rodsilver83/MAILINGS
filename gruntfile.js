@@ -106,6 +106,11 @@ module.exports = function (grunt) {
           'bpg/dist/templates/portafolio.html': 'bpg/src/templates/portafolio.html',     // 'destination': 'source'
           'bpg/dist/templates/por_que_elegirnos.html': 'bpg/src/templates/por_que_elegirnos.html',     // 'destination': 'source'
           'bpg/dist/templates/calendario.html': 'bpg/src/templates/calendario.html',     // 'destination': 'source'
+          'bpg/dist/templates/clientes.html': 'bpg/src/templates/clientes.html',     // 'destination': 'source'
+          'bpg/dist/templates/contacto.html': 'bpg/src/templates/contacto.html',     // 'destination': 'source'
+          'bpg/dist/templates/libreria.html': 'bpg/src/templates/libreria.html',     // 'destination': 'source'
+          'bpg/dist/templates/examen.html': 'bpg/src/templates/examen.html',     // 'destination': 'source'
+          'bpg/dist/templates/equipo.html': 'bpg/src/templates/equipo.html',     // 'destination': 'source'
           'bpg/dist/templates/modalTemplates.html': 'bpg/src/templates/modalTemplates.html',     // 'destination': 'source'
         }
       }
